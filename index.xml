@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skin>
+	<information>
+		<name>CyWorld_Skin</name>
+		<version>1.1</version>
+		<description>
+			<![CDATA[싸이월드 디자인으로 즐기는 tistory 스킨입니다.]]>
+		</description>
+		<license>
+			<![CDATA[ MIT License ]]>
+		</license>
+	</information>
+	<author>
+		<name>rlotr02</name>
+		<homepage>https://rlotr.tistory.com</homepage>
+		<email>0314kelee@gmail.com</email>
+	</author>
+	<default>
+		<recentEntries>4</recentEntries>
+		<itemsOnGuestbook>30</itemsOnGuestbook>
+		<sortInCloud>1</sortInCloud>
+		<expandComment>1</expandComment>
+		<commentMessage>
+			<none>0</none>
+			<single>1</single>
+		</commentMessage>
+		<trackbackMessage>
+			<none>0</none>
+			<single>1</single>
+		</trackbackMessage>
+	</default>
+	<variables>
+		<variable>
+			<name>footerCopyright</name>
+			<label>하단 카피라이트</label>
+			<description></description>
+			<type>STRING</type>
+			<option></option>
+			<default>ⓒ 2023. rlotr02 All rights reserved.</default>
+		</variable>
+	</variables>
+</skin>
