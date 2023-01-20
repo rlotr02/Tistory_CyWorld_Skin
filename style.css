@@ -59,15 +59,24 @@ figure[data-ke-type="opengraph"] a,
   color: rgb(224, 112, 112);
 }
 
-.tt_article_useless_p_margin figure[data-ke-type="opengraph"] a > div {
+.tt_article_useless_p_margin figure[data-ke-type="opengraph"] div.og-image {
   height: 110px;
   width: 110px;
   border-radius: 15px 0 0 15px;
 }
 
+figure[data-ke-type="opengraph"] a div.og-image::before,
+#tt-body-page figure[data-ke-type="opengraph"] a div.og-image::before,
+#tt-body-page
+  .blogview_content
+  figure[data-ke-type="opengraph"]
+  div.og-image::before {
+  background: transparent;
+}
+
 figure[data-ke-type="opengraph"] div.og-text {
   position: absolute;
-  left: 135px;
+  left: 130px;
   right: 0;
   top: 0;
   bottom: 0;
@@ -79,8 +88,8 @@ figure[data-ke-type="opengraph"] div.og-text p.og-title,
   color: #cf4646;
   font-size: 20px;
   font-weight: bold;
-  line-height: 18px;
-  max-width: 467px;
+  line-height: 20px;
+  max-width: 230px;
   text-overflow: ellipsis;
   white-space: nowrap;
   margin: 18px 0 10px 0 !important;
@@ -102,9 +111,10 @@ figure[data-ke-type="opengraph"] div.og-text p.og-desc,
 figure[data-ke-type="opengraph"] div.og-text p.og-host,
 #tt-body-page figure[data-ke-type="opengraph"] div.og-text p.og-host {
   position: absolute;
-  bottom: 7px;
+  bottom: 10px;
   font-family: "Poor Story", cursive;
-  font-size: 13x;
+  font-size: 13px;
+  line-height: 15px;
   color: #eeabab;
   margin: 0;
 }
@@ -839,6 +849,51 @@ footer a:hover {
 }
 
 @media (max-width: 1060px) {
+  figure[data-ke-type="opengraph"],
+  #tt-body-page figure[data-ke-type="opengraph"] {
+    border-radius: 10px;
+    margin: 8px 0px;
+    height: 70px;
+  }
+
+  figure[data-ke-type="opengraph"] a,
+  #tt-body-page figure[data-ke-type="opengraph"] a {
+    height: 70px;
+  }
+
+  .tt_article_useless_p_margin figure[data-ke-type="opengraph"] div.og-image {
+    height: 70px;
+    width: 70px;
+    border-radius: 10px 0 0 10px;
+  }
+
+  figure[data-ke-type="opengraph"] div.og-text {
+    left: 78px;
+  }
+
+  figure[data-ke-type="opengraph"] div.og-text p.og-title,
+  #tt-body-page figure[data-ke-type="opengraph"] div.og-text p.og-title {
+    font-size: 12px;
+    line-height: 25px;
+    max-width: 100px;
+    -webkit-line-clamp: 1;
+    margin: 0 !important;
+  }
+
+  figure[data-ke-type="opengraph"] div.og-text p.og-desc,
+  #tt-body-page figure[data-ke-type="opengraph"] div.og-text p.og-desc {
+    width: 110px;
+    font-size: 10px;
+    line-height: 13px;
+  }
+
+  figure[data-ke-type="opengraph"] div.og-text p.og-host,
+  #tt-body-page figure[data-ke-type="opengraph"] div.og-text p.og-host {
+    bottom: 0px;
+    font-size: 10px;
+    line-height: 18px;
+  }
+
   .center {
     margin-top: 35px;
   }
@@ -1167,5 +1222,19 @@ footer a:hover {
     display: flex;
     justify-content: center;
     margin: 1%;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  figure[data-ke-type="opengraph"] div.og-text,
+  #tt-body-page figure[data-ke-type="opengraph"] div.og-text {
+    left: 78px;
+    padding: 0;
+  }
+
+  figure[data-ke-type="opengraph"] div.og-text p.og-desc,
+  #tt-body-page figure[data-ke-type="opengraph"] div.og-text p.og-desc {
+    display: block;
   }
 }
