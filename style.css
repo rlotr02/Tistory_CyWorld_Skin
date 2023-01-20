@@ -37,8 +37,76 @@ body::-webkit-scrollbar-track {
 ::-moz-selection {
   background-color: rgba(245, 177, 177, 0.445);
 }
+
 ::selection {
   background-color: rgba(245, 177, 177, 0.445);
+}
+
+figure[data-ke-type="opengraph"],
+#tt-body-page figure[data-ke-type="opengraph"] {
+  margin: 15px 90px;
+  border-radius: 15px;
+  height: 110px;
+  box-shadow: 1px 1px 1px 1px #aeaeb3;
+}
+
+figure[data-ke-type="opengraph"] a,
+#tt-body-page figure[data-ke-type="opengraph"] a {
+  position: relative;
+  display: block;
+  height: 110px;
+  border: none;
+  color: rgb(224, 112, 112);
+}
+
+.tt_article_useless_p_margin figure[data-ke-type="opengraph"] a > div {
+  height: 110px;
+  width: 110px;
+  border-radius: 15px 0 0 15px;
+}
+
+figure[data-ke-type="opengraph"] div.og-text {
+  position: absolute;
+  left: 135px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 0;
+}
+
+figure[data-ke-type="opengraph"] div.og-text p.og-title,
+#tt-body-page figure[data-ke-type="opengraph"] div.og-text p.og-title {
+  color: #cf4646;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 18px;
+  max-width: 467px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 18px 0 10px 0 !important;
+  overflow: hidden;
+  font-family: "Poor Story", cursive;
+}
+
+figure[data-ke-type="opengraph"] div.og-text p.og-desc,
+#tt-body-page figure[data-ke-type="opengraph"] div.og-text p.og-desc {
+  margin: 0;
+  width: 230px;
+  font-family: "Poor Story", cursive;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #c95252;
+}
+
+figure[data-ke-type="opengraph"] div.og-text p.og-host,
+#tt-body-page figure[data-ke-type="opengraph"] div.og-text p.og-host {
+  position: absolute;
+  bottom: 7px;
+  font-family: "Poor Story", cursive;
+  font-size: 13x;
+  color: #eeabab;
+  margin: 0;
 }
 
 button,
