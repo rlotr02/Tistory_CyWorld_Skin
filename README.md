@@ -6,7 +6,7 @@
 </div>
 
 # CyWorld_Skin
-> **스킨 적용 티스토리 :** [https://kappungworld.tistory.com](https://kappungworld.tistory.com)
+> **스킨 적용 티스토리 :** [https://rlotr.tistory.com](https://rlotr.tistory.com)
 <br>
 
 ## 💻 프로젝트 소개
