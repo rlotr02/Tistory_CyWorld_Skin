@@ -87,7 +87,7 @@ header h2 {
   padding: 0 10px;
   border: none;
   box-shadow: 1px 1px 1px 1px #aeaeb3;
-  cursor:auto;
+  cursor: auto;
 }
 
 .search input[type="button"] {
@@ -294,7 +294,7 @@ main {
   box-shadow: 2px 2px 1px 1px #e6e6e9;
 }
 
-.component:hover {  
+.component:hover {
   cursor: pointer;
   border: 4px solid #f7bdc58c;
 }
@@ -327,7 +327,7 @@ main {
   height: 40px;
   color: #a79d9e;
   text-overflow: ellipsis;
-  overflow : hidden;
+  overflow: hidden;
 }
 
 .messageimg {
@@ -340,16 +340,17 @@ main {
   float: left;
   margin-bottom: 10px;
   font-size: 13px;
-  color:rgb(165, 161, 161);
+  color: rgb(165, 161, 161);
 }
 
 .cntdiv {
   float: right;
   font-size: 13px;
-  color:rgb(165, 161, 161);
+  color: rgb(165, 161, 161);
 }
 
-.permalinkdiv .category, .titleWrap {
+.permalinkdiv .category,
+.titleWrap {
   margin: 0;
   justify-content: center;
   text-align: center;
@@ -397,11 +398,13 @@ main {
   float: right;
 }
 
-.prevdiv a, .nextdiv a {
+.prevdiv a,
+.nextdiv a {
   color: #e28698;
 }
 
-.prevdiv a:hover, .nextdiv a:hover {
+.prevdiv a:hover,
+.nextdiv a:hover {
   color: #ad4258;
 }
 
@@ -664,8 +667,8 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 .guestList {
-  overflow-y: scroll; 
-  height:340px;
+  overflow-y: scroll;
+  height: 340px;
 }
 
 .guestList::-webkit-scrollbar {
@@ -703,7 +706,7 @@ textarea::-webkit-scrollbar-thumb {
   font-size: 15px;
 }
 
-.descdiv span a{
+.descdiv span a {
   color: #ad495d;
 }
 
@@ -816,7 +819,8 @@ footer a:hover {
     background-color: #ece0e0;
   }
 
-  .profile img, .profile hr {
+  .profile img,
+  .profile hr {
     width: 200px;
   }
 
@@ -953,8 +957,8 @@ footer a:hover {
   .nextdiv {
     font-size: 10px;
     margin-top: 5px;
-  }  
-  
+  }
+
   .admin {
     margin-bottom: 10px;
     font-size: 10px;
