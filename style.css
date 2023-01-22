@@ -44,7 +44,7 @@ body::-webkit-scrollbar-track {
 
 figure[data-ke-type="opengraph"],
 #tt-body-page figure[data-ke-type="opengraph"] {
-  margin: 15px 90px;
+  margin: 15px 0;
   border-radius: 15px;
   height: 110px;
   box-shadow: 1px 1px 1px 1px #aeaeb3;
@@ -89,7 +89,7 @@ figure[data-ke-type="opengraph"] div.og-text p.og-title,
   font-size: 20px;
   font-weight: bold;
   line-height: 20px;
-  max-width: 230px;
+  max-width: 300px;
   text-overflow: ellipsis;
   white-space: nowrap;
   margin: 18px 0 10px 0 !important;
@@ -100,7 +100,7 @@ figure[data-ke-type="opengraph"] div.og-text p.og-title,
 figure[data-ke-type="opengraph"] div.og-text p.og-desc,
 #tt-body-page figure[data-ke-type="opengraph"] div.og-text p.og-desc {
   margin: 0;
-  width: 230px;
+  width: 300px;
   font-family: "Poor Story", cursive;
   font-size: 13px;
   font-weight: 500;
@@ -464,6 +464,22 @@ main {
   font-size: 17px;
   color: #776d6f;
   line-height: 29px;
+  margin: 0 60px;
+}
+
+.article hr {
+  border: 1px solid #f7bdc58c;
+  width: 100px;
+}
+
+.article p[data-ke-size="size16"] {
+  text-align: left;
+  color: #e55163;
+}
+
+.article p[data-ke-size="size14"] {
+  text-align: left;
+  color: #ee8490;
 }
 
 .prevdiv {
@@ -1077,6 +1093,7 @@ footer a:hover {
   .article {
     font-size: 13px;
     line-height: 25px;
+    margin: 0;
   }
 
   .prevdiv {
